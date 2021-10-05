@@ -1,18 +1,7 @@
 import { combineEpics, Epic } from "redux-observable";
-import {
-  filter,
-  map,
-  tap,
-  ignoreElements,
-  mergeMap,
-  delayWhen,
-  switchMap,
-  takeUntil,
-  takeWhile,
-  skipUntil,
-} from "rxjs/operators";
-import { action, isActionOf } from "typesafe-actions";
-import { from, timer } from "rxjs";
+import { filter, map, tap, mergeMap, delayWhen } from "rxjs/operators";
+import { isActionOf } from "typesafe-actions";
+import { timer } from "rxjs";
 
 import { RootAction, RootState } from "../reducer";
 import * as workloadsActions from "./actions";
@@ -27,7 +16,6 @@ const logWorkloadSubmissions: AppEpic = (action$, state$) =>
     filter(isActionOf(workloadsActions.submit)),
     map((action) => action.payload),
     tap((payload) => console.log("Workload submitted", payload)),
-    // ignoreElements(),
     mergeMap((payload) =>
       service.create(payload).then((res) => {
         console.log(res);
