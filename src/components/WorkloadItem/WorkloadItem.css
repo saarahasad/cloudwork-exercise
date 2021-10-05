@@ -1,0 +1,59 @@
+.WorkloadItem {
+  border: 2px solid #6018f0;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.WorkloadItem__column {
+  float: left;
+}
+
+.workloadItem__left {
+  width: 50%;
+}
+
+.workloadItem__right {
+  width: 50%;
+  margin-top: 1em;
+}
+
+.WorkloadItem:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.WorkloadItem-heading {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.WorkloadItem-subHeading {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  padding-left: 10px;
+}
+
+.WorkloadItem-statusText {
+  font-weight: bold;
+  float: right;
+  padding-right: 3em;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.WorkloadItem-secondaryButton {
+  padding: 0.5em;
+  margin-left: 2em;
+  font-size: 16px;
+  background-color: #dfd4f5;
+  border: none;
+  color: #4104bb;
+}

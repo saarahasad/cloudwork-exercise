@@ -1,6 +1,6 @@
-import { combineEpics } from 'redux-observable';
+import { combineEpics } from "redux-observable";
 
-import { epics as workloadsEpics } from './workloads';
+import { epics as workloadsEpics } from "./workloads";
 
 export const epics = combineEpics(workloadsEpics);
 

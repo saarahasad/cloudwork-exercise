@@ -1,2 +1,2 @@
-export { default } from './WorkloadForm';
-export * from './WorkloadForm';
+export { default } from "./WorkloadForm";
+export * from "./WorkloadForm";

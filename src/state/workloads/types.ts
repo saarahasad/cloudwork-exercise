@@ -1,1 +1,1 @@
-export type Status = 'WORKING' | 'SUCCESS' | 'FAILURE' | 'CANCELED';
+export type Status = "WORKING" | "SUCCESS" | "FAILURE" | "CANCELED";

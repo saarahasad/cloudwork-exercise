@@ -1,1 +1,61 @@
 /* .App {} */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+.main-container {
+  min-height: 88vh;
+  border-radius: 15px;
+  border: 4px solid #6018f0;
+  border-top: 35px solid #6018f0;
+  margin: 2vh;
+  padding: 2vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #6018f0;
+}
+.main-container__column {
+  float: left;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+
+.main-container__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container__column {
+    width: 100%;
+  }
+}
+
+hr {
+  border: 1px solid #6018f0;
+  border-radius: 5px;
+}
+
+.main-container__heading {
+  font-weight: normal !important;
+  font-size: 23px;
+}
